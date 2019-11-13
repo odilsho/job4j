@@ -1,4 +1,5 @@
 package loop;
+
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
