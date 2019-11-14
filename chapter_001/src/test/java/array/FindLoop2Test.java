@@ -15,7 +15,7 @@ public class FindLoop2Test {
     }
     @Test
     public void whenArrayHasNotLength5ThenFalse() {
-        int[] input = new int[] {10, 5, 3};
+        int[] input = new int[] {10, 4, 3};
         int value = 5;
         int result = FindLoop2.indexOf(input, value);
         int expect = -1;
