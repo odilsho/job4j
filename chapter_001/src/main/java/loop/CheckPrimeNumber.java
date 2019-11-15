@@ -1,11 +1,8 @@
 package loop;
 
-import java.sql.PreparedStatement;
-
 public class CheckPrimeNumber {
     public boolean check(int finish) {
         boolean prime = true;
-
         for (int i = 2; i < finish; i++) {
             if (finish % i == 0) {
                 prime = false;
