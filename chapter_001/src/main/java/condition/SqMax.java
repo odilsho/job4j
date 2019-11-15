@@ -10,9 +10,9 @@ public class SqMax {
                 }
             } else result = third;
         } else if (second > third) {
-            if (second > forth) {
-                result = first;
-            }
+
+            if (second > forth) result = first;
+
         } else if (third > forth) {
             result = second;
         }

@@ -25,4 +25,13 @@ public class SqMaxTest {
 
     }
 
+    @Test
+    public void When4381Then8() {
+
+        int result = SqMax.max(4, 3, 8, 1);
+        assertThat(result, is(8));
+
+
+    }
+
 }
