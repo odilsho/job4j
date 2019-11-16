@@ -1,32 +1,25 @@
 package array;
-
 public class MatrixCheck {
-
-
     public static boolean isWin(char[][] board) {
         boolean result = false;
-        int countCell=0;
+        int countCell = 0;
         for (int row = 0; row < board.length; row++) {
-            int countRow=0;
+            int countRow = 0;
             for (int cell = 0; cell < board.length; cell++) {
-               if (board[row][row]=='X') {
-                   if (board[row][row] == board[row][cell])
-                       countRow++;
+                if (board[row][row] == 'X') {
+                    if (board[row][row] == board[row][cell])
+                        countRow++;
 
 
-                   if (board[row][row] == board[cell][row])
-                       countCell++;
-
-               }
+                    if (board[row][row] == board[cell][row])
+                        countCell++;
+                }
             }
-            if (countCell==board.length||countRow==board.length)
-                result=true;
+            if (countCell == board.length || countRow == board.length)
+                result = true;
         }
-
         return result;
     }
-
-
     public static void main(String[] args) {
         char[][] hasWinVertical = {
                 {'_', '_', 'X', '_', '_'},
