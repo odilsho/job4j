@@ -2,7 +2,6 @@ package array;
 
 public class MatrixCheck {
 
-    public static boolean found[];
 
     public static boolean isWin(char[][] board) {
         boolean result = false;
@@ -11,22 +10,20 @@ public class MatrixCheck {
             for (int cell = 0; cell < board.length - 1; cell++) {
                 char sign = board[row][cell];
                 System.out.print(sign);
-                for (int i = 0; i < board.length - 1; i++) {
-                    // проверить последовательность.
-                    if (board[cell][row] == 'X') {
-                        c = cell;
-                        r = row;
-
-                    }  if (board[r + 1][c] == 'X')
-                        result = true;
+                if (board[cell][row] == 'X') {
+                    c = cell;
+                    r = row;
 
                 }
-                System.out.println();
-            }
+                if (board[r + 1][c] == 'X')
+                    result = true;
 
+            }
+            System.out.println();
         }
         return result;
     }
+
 
     public static void main(String[] args) {
         char[][] hasWinVertical = {
