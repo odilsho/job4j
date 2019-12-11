@@ -6,10 +6,10 @@ public class SortSelected {
         int size = data.length;
         int index = FindLoop2.indexOf(data, min, 0, data.length);
         for (int i = 0; i < size; i++) {
-               index=i;
+            index = i;
 
             for (int j = i + 1; j < size; j++)
-                if (data[j] < data[index]){
+                if (data[j] < data[index]) {
                     index = j;
                 }
             int temp = data[index];
