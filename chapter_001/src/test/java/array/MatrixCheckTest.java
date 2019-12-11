@@ -19,7 +19,6 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.isWin(input);
         assertThat(result, is(true));
     }
-
     @Test
     public void whenDataNotMonoByTrueThenFalse() {
         char[][] input = {
@@ -28,6 +27,7 @@ public class MatrixCheckTest {
                 {' ', 'X', ' ', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},
+
         };
         boolean result = MatrixCheck.isWin(input);
         assertThat(result, is(false));
@@ -58,4 +58,5 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.isWin(input);
         assertThat(result, is(false));
     }
+
 }
