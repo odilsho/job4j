@@ -10,14 +10,14 @@ public class MatrixCheck {
                 if (board[row][row] == 'X') {
                     if (board[row][row] == board[row][cell])
                         countRow++;
-
-
                     if (board[row][row] == board[cell][row])
                         countCell++;
                 }
             }
-            if (countCell == board.length || countRow == board.length)
+            if (countCell == board.length || countRow == board.length) {
                 result = true;
+                break;
+            } else result = false;
         }
         return result;
     }
