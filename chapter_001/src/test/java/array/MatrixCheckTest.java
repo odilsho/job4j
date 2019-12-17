@@ -48,7 +48,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenDataMonoByRowThenFasle() {
+    public void whenDataMonoByRowThenFalse() {
         char[][] input = {
                 {' ', ' ', ' ', ' ', ' '},
                 {' ', ' ', ' ', ' ', ' '},

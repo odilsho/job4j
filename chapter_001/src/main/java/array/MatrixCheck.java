@@ -4,23 +4,29 @@ public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
         int countCell = 0;
+        int countRow = 0;
         for (int row = 0; row < board.length; row++) {
-            int countRow = 0;
+
             for (int cell = 0; cell < board.length; cell++) {
                 if (board[row][row] == 'X') {
-                    if (board[row][row] == board[row][cell])
-                        countRow++;
-                    if (board[row][row] == board[cell][row])
-                        countCell++;
+
+                    countRow++;
+
                 }
             }
-            if (countCell == board.length || countRow == board.length) {
-                result = true;
-                break;
-            } else result = false;
+            for (int cell = 0; cell < board.length; cell++) {
+                if (board[cell][cell] == 'X') {
+                    countCell++;
+
+                }
+            }
+        }
+        if ((countCell == board.length) || (countRow == board.length)) {
+            result = true;
         }
         return result;
     }
+
 
     public static void main(String[] args) {
         char[][] hasWinVertical = {
