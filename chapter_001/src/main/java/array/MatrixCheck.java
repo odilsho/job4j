@@ -1,5 +1,4 @@
 package array;
-
 public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
@@ -11,13 +10,11 @@ public class MatrixCheck {
                 if (board[row][row] == 'X') {
 
                     countRow++;
-
                 }
             }
             for (int cell = 0; cell < board.length; cell++) {
                 if (board[cell][cell] == 'X') {
                     countCell++;
-
                 }
             }
         }
@@ -26,8 +23,6 @@ public class MatrixCheck {
         }
         return result;
     }
-
-
     public static void main(String[] args) {
         char[][] hasWinVertical = {
                 {'_', '_', 'X', '_', '_'},
