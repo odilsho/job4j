@@ -1,4 +1,5 @@
 package array;
+
 public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
@@ -23,6 +24,7 @@ public class MatrixCheck {
         }
         return result;
     }
+
     public static void main(String[] args) {
         char[][] hasWinVertical = {
                 {'_', '_', 'X', '_', '_'},
