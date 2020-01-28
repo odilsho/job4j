@@ -21,6 +21,7 @@ public class MatrixCheck {
         }
         if ((countCell == board.length) || (countRow == board.length)) {
             result = true;
+
         }
         return result;
     }
