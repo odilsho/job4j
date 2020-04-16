@@ -11,19 +11,13 @@ public class MatrixCheck671 {
 
                 } else
                     countRow = 0;
-
-                if (board.length == countRow ) {
-                    result = true;
-                    break;
-
                 }
-
+            if (board.length == countRow ) {
+                result = true;
+                break;
 
             }
-
         }
-
-
-        return result;
+                  return result;
     }
 }
